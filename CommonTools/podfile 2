@@ -1,0 +1,86 @@
+platform :ios, '10.0'
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+#source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+inhibit_all_warnings!
+
+workspace 'ArtMedia2.xcworkspace'
+project 'ArtMedia2.xcodeproj'
+
+# 共有-UGCKit
+def commonPodsWithUGCKit
+  pod 'AFNetworking'
+  pod 'MJRefresh'
+  pod 'Masonry'
+  pod 'IQKeyboardManager'
+  pod 'SDCycleScrollView','>= 1.80' #已关联SDWebImage最新版
+  pod 'MBProgressHUD'
+  pod 'SVProgressHUD'
+#  pod 'MCDownloadManager'
+  pod 'DYSafeObject', '~> 0.1.3' #防止 字典value为nil、数组越界、<null>、NSNull对象导致的Crash
+  pod 'TXLiteAVSDK_Professional' , :podspec => 'http://pod-1252463788.cosgz.myqcloud.com/liteavsdkspec/TXLiteAVSDK_Professional.podspec'
+end
+
+
+# 共有-BeautyPanel
+def commonPodsWithBeautyPanel
+  pod 'ZipArchive'
+end
+
+
+# 主工程
+target 'ArtMedia2' do
+  
+  commonPodsWithUGCKit
+  commonPodsWithBeautyPanel
+  
+  pod 'QBImagePickerController' # 多人会议
+  pod 'SDRangeSlider'#双向滑块
+  
+  pod 'WechatOpenSDK'
+  pod 'YYModel'
+  pod 'BRPickerView' #选择器
+  pod 'AlipaySDK-iOS'
+  pod 'GTSDK', '2.4.4.0-noidfa'
+  pod 'RollingNotice' #翻页label
+  pod 'XHLaunchAd' #启动页
+  
+  pod 'UMCCommon', '>= 7.2' #友盟
+  pod 'UMCCommonLog'
+  
+  pod 'TXIMSDK_iOS' #腾讯IM
+  pod 'SJVideoPlayer' #视频播放器
+
+  pod 'RSKImageCropper' #图片裁剪
+  pod 'MJExtension'
+  pod 'YBImageBrowser' #图片浏览器
+  pod 'YYImage', :git => 'https://github.com/QiuYeHong90/YYImage.git'
+
+  post_install do |installer|
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '8.0'
+      end
+    end
+  end
+
+end
+
+target 'NotificationService' do
+  
+    pod 'GTExtensionSDK' #每次install/update之后 需要在Pods-ArtMedia2.xxxx.xcconfig中删除GTExtensionSDK 库的引用
+end
+
+target "UGCKit" do
+  
+  project 'ArtMedia2/Pages/ShortVideo/UGCKit/UGCKit.xcodeproj'
+  commonPodsWithUGCKit
+  
+end
+
+target "TCBeautyPanel" do
+  
+  project 'ArtMedia2/Pages/ShortVideo/BeautySettingKit/TCBeautyPanel.xcodeproj'
+  commonPodsWithBeautyPanel
+  
+end

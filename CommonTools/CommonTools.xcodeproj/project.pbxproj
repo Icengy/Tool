@@ -61,7 +61,6 @@
 		2B6758CD276762B20091396A /* CommonTools */ = {
 			isa = PBXGroup;
 			children = (
-				2B6758E7276762C10091396A /* Tools */,
 				2B6758CE276762B20091396A /* AppDelegate.h */,
 				2B6758CF276762B20091396A /* AppDelegate.m */,
 				2B6758D1276762B20091396A /* SceneDelegate.h */,
@@ -75,13 +74,6 @@
 				2B6758E0276762B70091396A /* main.m */,
 			);
 			path = CommonTools;
-			sourceTree = "<group>";
-		};
-		2B6758E7276762C10091396A /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +117,15 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
+				"zh-Hans",
+				ja,
+				es,
+				pl,
+				"zh-Hant",
+				"ar-001",
+				"tz-ru",
+				"tz-RU",
 			);
 			mainGroup = 2B6758C2276762B20091396A;
 			productRefGroup = 2B6758CC276762B20091396A /* Products */;
@@ -303,6 +304,44 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U5JXV34QTW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_TRTC_iOS_7.0.8671/TRTCScenesDemo/Pods/TXIMSDK_iOS",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_TRTC_iOS_7.0.8671/SDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/LiteAVProfessional_iOS/Demo/SuperPlayer/Frameworks",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/LiteAVProfessional_iOS/Demo/TXLiteAVDemo/VideoUpload/COSSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/LiteAVProfessional_iOS/Demo/TXLiteAVDemo/Third/QAPM",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/LiteAVProfessional_iOS/Demo/TXLiteAVDemo/Third/Bugly",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/直播demo/LiveDemo/Pods/TXLiteAVSDK_Professional/TXLiteAVSDK_Professional",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/New/IQKeyboardManager",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/New/DTCoreText",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/New/BlocksKit",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/artmedia/ArtMedia2/Depandence/ShortVideo/UGC/VideoUpload/COSSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/artmedia/ArtMedia2/Depandence/ShortVideo",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/artmedia/ArtMedia2/Depandence/ShortVideo/Third/UMSocial/UMSocialUI",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/artmedia/ArtMedia2/Depandence/ShortVideo/Third/UMSocial/UMSocialSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/artmedia/ArtMedia2/Depandence/IDCardRecognition/Framework",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_6.6.7559/Demo/SuperPlayer/Frameworks",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_6.6.7559/Demo/TXLiteAVDemo",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_6.6.7559/Demo/TXLiteAVDemo/VideoUpload/COSSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_6.6.7559/Demo/TXLiteAVDemo/Third/ImSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_6.6.7559/Demo/TXLiteAVDemo/Common/ForEnterprise/pitu/Frameworks",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_6.6.7559/SDK/ImSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_6.6.7559/SDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_7.0.8671/Demo/SuperPlayer/Frameworks",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_7.0.8671/Demo/TXLiteAVDemo/VideoUpload/COSSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_7.0.8671/Demo/TXLiteAVDemo/Third/ImSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_7.0.8671/Demo/TXLiteAVDemo/Third/QAPM",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_7.0.8671/Demo/TXLiteAVDemo/Third/Bugly",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_7.0.8671/SDK/ImSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_7.0.8671/SDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/xiaoshipin/TXXiaoShiPinDemo/Framework",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/xiaoshipin/TXXiaoShiPinDemo/Classes/VideoUpload/COSSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/xiaoshipin/TXXiaoShiPinDemo/Classes/Thirdparty/UMSocial/UMSocialUI",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/xiaoshipin/TXXiaoShiPinDemo/Classes/Thirdparty/UMSocial/UMSocialSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/xiaoshipin/TXXiaoShiPinDemo/Resource/UMSocial/UMSocialSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/xiaoshipin/TXXiaoShiPinDemo/Resource/UMSocial/SocialLibraries/QQ",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CommonTools/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -313,6 +352,22 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/LiteAVProfessional_iOS/Demo/TXLiteAVDemo/VideoUpload/COSSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/IDCardRecognition/IDCardRecognitionDemo/IDCardRecognitionDemo/libexidcard",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/artmedia/ArtMedia2/Depandence/ShortVideo/Third/UMSocial/SocialLibraries/WeChat",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/artmedia/ArtMedia2/Depandence/ShortVideo/Third/UMSocial/SocialLibraries/Sina",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/artmedia/ArtMedia2/Depandence/ShortVideo/Third/UMSocial/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/artmedia/ArtMedia2/Depandence/ShortVideo/Third/UMSocial/UMSocialSDKPlugin",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/artmedia/ArtMedia2/Depandence/IDCardRecognition/libexidcard",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_6.6.7559/Demo/TXLiteAVDemo/VideoUpload/COSSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_7.0.8671/Demo/TXLiteAVDemo/VideoUpload/COSSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/xiaoshipin/TXXiaoShiPinDemo/Classes/Thirdparty/UMSocial/SocialLibraries/WeChat",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/xiaoshipin/TXXiaoShiPinDemo/Classes/Thirdparty/UMSocial/SocialLibraries/Sina",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/xiaoshipin/TXXiaoShiPinDemo/Classes/Thirdparty/UMSocial/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/xiaoshipin/TXXiaoShiPinDemo/Classes/Thirdparty/UMSocial/UMSocialSDKPlugin",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = icengy.CommonTools;
@@ -330,6 +385,44 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U5JXV34QTW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_TRTC_iOS_7.0.8671/TRTCScenesDemo/Pods/TXIMSDK_iOS",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_TRTC_iOS_7.0.8671/SDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/LiteAVProfessional_iOS/Demo/SuperPlayer/Frameworks",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/LiteAVProfessional_iOS/Demo/TXLiteAVDemo/VideoUpload/COSSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/LiteAVProfessional_iOS/Demo/TXLiteAVDemo/Third/QAPM",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/LiteAVProfessional_iOS/Demo/TXLiteAVDemo/Third/Bugly",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/直播demo/LiveDemo/Pods/TXLiteAVSDK_Professional/TXLiteAVSDK_Professional",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/New/IQKeyboardManager",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/New/DTCoreText",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/New/BlocksKit",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/artmedia/ArtMedia2/Depandence/ShortVideo/UGC/VideoUpload/COSSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/artmedia/ArtMedia2/Depandence/ShortVideo",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/artmedia/ArtMedia2/Depandence/ShortVideo/Third/UMSocial/UMSocialUI",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/artmedia/ArtMedia2/Depandence/ShortVideo/Third/UMSocial/UMSocialSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/artmedia/ArtMedia2/Depandence/IDCardRecognition/Framework",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_6.6.7559/Demo/SuperPlayer/Frameworks",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_6.6.7559/Demo/TXLiteAVDemo",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_6.6.7559/Demo/TXLiteAVDemo/VideoUpload/COSSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_6.6.7559/Demo/TXLiteAVDemo/Third/ImSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_6.6.7559/Demo/TXLiteAVDemo/Common/ForEnterprise/pitu/Frameworks",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_6.6.7559/SDK/ImSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_6.6.7559/SDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_7.0.8671/Demo/SuperPlayer/Frameworks",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_7.0.8671/Demo/TXLiteAVDemo/VideoUpload/COSSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_7.0.8671/Demo/TXLiteAVDemo/Third/ImSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_7.0.8671/Demo/TXLiteAVDemo/Third/QAPM",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_7.0.8671/Demo/TXLiteAVDemo/Third/Bugly",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_7.0.8671/SDK/ImSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_7.0.8671/SDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/xiaoshipin/TXXiaoShiPinDemo/Framework",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/xiaoshipin/TXXiaoShiPinDemo/Classes/VideoUpload/COSSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/xiaoshipin/TXXiaoShiPinDemo/Classes/Thirdparty/UMSocial/UMSocialUI",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/xiaoshipin/TXXiaoShiPinDemo/Classes/Thirdparty/UMSocial/UMSocialSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/xiaoshipin/TXXiaoShiPinDemo/Resource/UMSocial/UMSocialSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/xiaoshipin/TXXiaoShiPinDemo/Resource/UMSocial/SocialLibraries/QQ",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CommonTools/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -340,6 +433,22 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/LiteAVProfessional_iOS/Demo/TXLiteAVDemo/VideoUpload/COSSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/IDCardRecognition/IDCardRecognitionDemo/IDCardRecognitionDemo/libexidcard",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/artmedia/ArtMedia2/Depandence/ShortVideo/Third/UMSocial/SocialLibraries/WeChat",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/artmedia/ArtMedia2/Depandence/ShortVideo/Third/UMSocial/SocialLibraries/Sina",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/artmedia/ArtMedia2/Depandence/ShortVideo/Third/UMSocial/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/artmedia/ArtMedia2/Depandence/ShortVideo/Third/UMSocial/UMSocialSDKPlugin",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/artmedia/ArtMedia2/Depandence/IDCardRecognition/libexidcard",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_6.6.7559/Demo/TXLiteAVDemo/VideoUpload/COSSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/TXLiteAVSDK_Professional_iOS_7.0.8671/Demo/TXLiteAVDemo/VideoUpload/COSSDK",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/xiaoshipin/TXXiaoShiPinDemo/Classes/Thirdparty/UMSocial/SocialLibraries/WeChat",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/xiaoshipin/TXXiaoShiPinDemo/Classes/Thirdparty/UMSocial/SocialLibraries/Sina",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/xiaoshipin/TXXiaoShiPinDemo/Classes/Thirdparty/UMSocial/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/CommonTools/ThirdPro/xiaoshipin/TXXiaoShiPinDemo/Classes/Thirdparty/UMSocial/UMSocialSDKPlugin",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = icengy.CommonTools;

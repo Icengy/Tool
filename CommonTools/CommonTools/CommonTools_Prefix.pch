@@ -1,0 +1,110 @@
+//
+//  Gallop_iOS_Prefix.pch
+//  Gallop_iOS
+//
+//  Created by Homosum on 2019/4/11.
+//  Copyright © 2019 homosum. All rights reserved.
+//
+#import <Availability.h>
+#ifndef Gallop_iOS_Prefix_pch
+#define Gallop_iOS_Prefix_pchn
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+/*Log系统*/
+//#if TARGET_OS_SIMULATOR //虚拟机从控制台输出
+
+#ifdef DEBUG
+#define NSLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ## __VA_ARGS__);
+#else
+#define NSLog(...)
+#endif
+
+//#import <Reachability/Reachability.h>
+#import "Reachability.h"
+#import <MJRefresh/MJRefresh.h>
+#import <MJExtension/MJExtension.h>
+//#import <MKNetworkKit/MKNetworkKit.h>
+#import "MKNetworkKit.h"
+#import <Masonry/Masonry.h>
+#import <SDWebImage/UIButton+WebCache.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <UITableView+FDTemplateLayoutCell.h>
+#import "ActionSheetStringPicker.h"
+#import <extobjc.h>
+#import "JSONKit.h"
+#import "RegexKitLite.h"
+#import "FMDB.h"
+//#import "MBProgressHUD.h"
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <AFNetworking/AFNetworking.h>
+#import "UINavigationController+FDFullscreenPopGesture.h"
+#import "AppDefine.h"
+#import "AppColorDefine.h"
+#import "AppConfig.h"
+#import "AppUtility.h"
+/*Base*/
+#import "ESViewController.h"
+#import "ESNavigationViewController.h"
+#import "ESTextView.h"
+#import "ESTableViewCell.h"
+#import "ESButton.h"
+#import "ESRefreshHeader.h"
+#import "ESRefreshFooter.h"
+#import "LoginViewController.h"
+
+/*Manager*/
+#import "LPSystemManager.h"
+
+
+/*Service*/
+#import "ESHttpService.h"
+#import "ESNetworkService.h"
+/*Util*/
+#import "CommonUtils.h"
+#import "CMMUtility.h"
+#import "LPUnitily.h"
+#import "UtilFunc.h"
+#import "DES3Util.h"
+#import "UIView+Frame.h"
+#import "NSString+Ext.h"
+#import "UIImage+Ext.h"
+#import "UILabel+Custom.h"
+/*ThirdParty*/
+#import "BlocksKit.h"
+#import "BlocksKit+UIKit.h"
+#import "BlocksKit+QuickLook.h"
+#import "BlocksKit+MessageUI.h"
+#import "MJCostomAnimHeader.h"
+#import "DSToast.h"
+#import "ChineseInclude.h"
+#import "PinYinForObjc.h"
+#import <UMAnalytics/MobClick.h>
+/* category*/
+#import "NSArray+WSArray.h"
+#import "NSMutableArray+WSMutableArray.h"
+#import "NSString+WSString.h"
+#import "UIImage+Extensions.h"
+#import "NSObject+HZExtend.h"
+#import "UIView+UIViewController.h"
+#import "UIViewController+HZHUD.h"
+#import "UIImage+FEBoxBlur.h"
+#import "UIWindow+Visible.h"
+#import "NSObject+Y_Copying.h"
+#import "UITableView+SpaceHolder.h"
+#import "UIColor+Hex.h"
+#import "UIColor+Gradient.h"
+//#import "UIFont+changeFont.h"
+#import "NSDictionary+Chinese.h"
+#import "NSDictionary+Chinese.h"
+#import "UITableView+SpaceHolder.h"
+#import "UIViewController+ChangeUI.h"
+#import "GallopTagLabel.h"
+//#import "UIFont+changeFontType.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* Gallop_iOS_Prefix_pch */

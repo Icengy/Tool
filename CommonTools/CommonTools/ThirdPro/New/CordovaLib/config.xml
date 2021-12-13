@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.edusoho.kuozhi" version="0.0.1" xmlns="http://www.w3.org/ns/widgets">
+    <preference name="AllowInlineMediaPlayback" value="true" />
+    <preference name="BackupWebStorage" value="none" />
+    <preference name="DisallowOverscroll" value="true" />
+<!--    <preference name="TopActivityIndicator" value="gray" />-->
+    <preference name="EnableViewportScale" value="false" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="false" />
+    <preference name="MediaPlaybackRequiresUserAction" value="true" />
+    <preference name="SuppressesIncrementalRendering" value="false" />
+    <preference name="GapBetweenPages" value="0" />
+    <preference name="PageLength" value="0" />
+    <preference name="PaginationBreakingMode" value="page" />
+    <preference name="PaginationMode" value="unpaginated" />
+    <preference name="UIWebViewDecelerationSpeed" value="normal" />
+    <preference name="AppendUserAgent" value="iOS-kuozhi" />
+<!--    <preference name="ErrorUrl" value="myErrorPage.html"/>-->
+    <feature name="LocalStorage">
+        <param name="ios-package" value="CDVLocalStorage" />
+    </feature>
+    <feature name="ESNativeCore">
+        <param name="ios-package" value="ESNativeCore" />
+    </feature>
+    <allow-intent href="itms:*" />
+    <allow-intent href="itms-apps:*" />
+    <name>EduSoho</name>
+<!--    <content src="http://trymob.edusoho.cn/mapi_v2/mobile/main" />-->
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+</widget>

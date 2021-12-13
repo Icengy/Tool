@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AMReportView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2dj-bN-OPV">
+                    <rect key="frame" x="15" y="602" width="384" height="260"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fuc-Oi-ITP">
+                            <rect key="frame" x="0.0" y="0.0" width="384" height="200"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="muY-xN-8ht"/>
+                            </constraints>
+                            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIi-6w-Azb" customClass="AMButton">
+                            <rect key="frame" x="0.0" y="210" width="384" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="AdS-NW-6dG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="0.082352941176470587" green="0.086274509803921567" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="clickToCancel:" destination="iN0-l3-epB" eventType="touchUpInside" id="tpc-dH-EA4"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Fuc-Oi-ITP" firstAttribute="leading" secondItem="2dj-bN-OPV" secondAttribute="leading" id="ANs-3D-Pk0"/>
+                        <constraint firstItem="AIi-6w-Azb" firstAttribute="leading" secondItem="2dj-bN-OPV" secondAttribute="leading" id="BRf-IL-m6U"/>
+                        <constraint firstItem="Fuc-Oi-ITP" firstAttribute="top" secondItem="2dj-bN-OPV" secondAttribute="top" id="LHh-ms-i2p"/>
+                        <constraint firstAttribute="trailing" secondItem="AIi-6w-Azb" secondAttribute="trailing" id="Pp9-gb-Eea"/>
+                        <constraint firstAttribute="bottom" secondItem="AIi-6w-Azb" secondAttribute="bottom" constant="10" id="YFY-U7-B9l"/>
+                        <constraint firstItem="AIi-6w-Azb" firstAttribute="top" secondItem="Fuc-Oi-ITP" secondAttribute="bottom" constant="10" id="kDS-oM-ou9"/>
+                        <constraint firstAttribute="trailing" secondItem="Fuc-Oi-ITP" secondAttribute="trailing" id="nLB-46-vLb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2dj-bN-OPV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="5YJ-mS-EHV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2dj-bN-OPV" secondAttribute="trailing" constant="15" id="eNL-3K-Gu7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="2dj-bN-OPV" secondAttribute="bottom" id="rgs-gt-nCE"/>
+            </constraints>
+            <connections>
+                <outlet property="cancelBottomContraint" destination="YFY-U7-B9l" id="oiN-rl-bdU"/>
+                <outlet property="cancelBtn" destination="AIi-6w-Azb" id="SEn-k3-92D"/>
+                <outlet property="cancelHeightContraint" destination="AdS-NW-6dG" id="ouN-By-DKw"/>
+                <outlet property="contentView" destination="2dj-bN-OPV" id="1vP-iZ-qJ4"/>
+                <outlet property="tableView" destination="Fuc-Oi-ITP" id="qB9-7t-Abt"/>
+                <outlet property="tableViewHeightContraint" destination="muY-xN-8ht" id="rg3-RD-eTx"/>
+            </connections>
+            <point key="canvasLocation" x="89.855072463768124" y="-56.919642857142854"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="AIi-6w-Azb">
+            <size key="intrinsicContentSize" width="30" height="29"/>
+        </designable>
+    </designables>
+</document>

@@ -1,0 +1,26 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+#source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/aliyun/aliyun-specs.git'
+
+target 'CommonTools' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Gallop_iOS
+    #pod 'SDWebImage'
+    #pod 'Masonry'
+    #pod 'MJRefresh'
+    #pod 'MJExtension'
+    #pod 'AFNetworking'
+    #pod 'SVProgressHUD'
+    #pod 'MBProgressHUD'
+    #pod 'YYModel'
+    #pod 'DYSafeObject', '~> 0.1.3' #防止 字典value为nil、数组越界、<null>、NSNull对象导致的Crash
+    #pod 'SDCycleScrollView','>= 1.80' #已关联SDWebImage最新版
+    #pod 'IQKeyboardManager'
+    #pod 'ZipArchive'
+
+end
